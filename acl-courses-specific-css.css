@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document for ACL courses*/
+
+/** 
+**	  CSS RESET
+**	  http://meyerweb.com/eric/tools/css/reset/ 
+**	  v2.0 | 20110126
+**	  License: none (public domain)
+**/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th {
+	font-weight:bold;
+}
+td {
+	padding:5px 20px 5px 10px;
+	border:1px solid black;
+}
+
+
+body{
+	font-family: Arial, Verdana, Helvetica, sans serif;
+	font-size: 1.0em;
+	background:#ffffff;
+	overflow:auto;
+}
+
+iframe {
+	overflow:auto;
+}
+
+iframe#welcomePage {
+	margin-top:-35px;
+}
+
+/*closed caption/narration popup*/
+.ui-widget {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.0em;
+	z-index:99999;
+}
+.ui-dialog {
+	display:none;
+	margin:.2em !important;
+	width:400px !important;
+}
+.ui-dialog-content {
+	padding:.5em .5em 1em 1em !important;
+	line-height:1.2em;
+}
+
+.ui-dialog-titlebar {
+    border: none;
+    background: none;
+    color: #222222;
+}
+.ui-dialog-title {
+	padding-bottom:0.5em;
+	border-bottom: 1px solid #aaaaaa;
+	clear:both;
+}
+
+.ui-corner-all {
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.ui-button-text {
+	padding:.2em .6em !important;
+}
+
+/*for the close button*/
+.ui-state-default {
+	opacity:.9;
+}
+
+.ui-state-focus, .ui-state-hover {
+	opacity:1;
+	outline-color: #8AB839;
+	outline-width:thin;
+	outline-style:solid;
+}
+
+/**FIREFOX ONLY for the close button**/
+
+@-moz-document url-prefix() {
+	.ui-state-focus, .ui-state-hover {
+		outline:none;
+	}
+}
+
+h2, h3, h4, h5 {
+	font-weight:bold;
+}
+h2, h3, h4, h5, p {
+    margin-bottom:1.2em;
+	line-height:1.2em;
+}
+
+p {
+	line-height:1.2em;
+}
+
+strong, .boldMe, h1, h2 {
+	font-weight:bold;
+}
+
+.boldi {
+	font-weight:bold;
+	font-style:italic;
+}
+
+.boldiu {
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;
+}
+.boldu {
+	font-weight:bold;
+	text-decoration:underline;
+}
+.iu {
+	text-decoration:underline;
+	font-style:italic;
+}
+sup {
+	vertical-align:super;
+	font-size:smaller;
+}
+
+sub {
+	vertical-align:sub;
+	font-size:smaller;
+}
+.oneLine + p {
+	margin-top:-1.0em;
+}
+
+.noSpaceAbove {
+	margin-top:-1.0em;
+}
+em {
+	font-style:italic;
+}
+#mainContent {
+	padding: 10px 10px 10px 10px;
+	background:#ffffff;
+}
+
+/** START INTRO PAGES **/
+#mainContent.introPages {
+	padding-top:0px;
+}
+/** END INTRO PAGES **/
+
+
+/*** HYPERLINKS ***/
+a{
+	color:blue;
+    text-decoration: underline; 
+	cursor: pointer;
+}
+
+a:active{
+    text-decoration: underline
+}
+
+a:visited{
+	color:purple;
+    text-decoration:underline;
+}
+
+a:hover{
+	color:slateblue;
+	text-decoration:none;
+}
+
+/*** START HIGHSLIDE POPUPS ***/
+/*.last_para {margin-bottom: 0px; line-height:110%;}
+
+.narration-script .highslide-html-content {width: 400px; display: none; }
+.moreInfo .highslide-html-content {width: 550px; display: none; }
+
+.highslide-body {max-height:300px; padding-bottom:5px;}
+
+.highslide-maincontent {display: none;}
+.highslide-container div {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	line-height:110%;
+}
+.highslide-header {border-bottom: solid 1px #666666; margin-bottom: 5px;}
+.highslide-header ul li {font-size: 10px;}
+.highslide-heading {color: #666666; font: bold 1.05em Arial, Verdana, Helvetica, sans-serif; position:relative; top:15px;}
+li.highslide-close * {
+	z-index:9999;
+}*/
+/*** END HIGHSLIDE POPUPS ***/
+
+/*** START LISTS ***/
+ol, ul {
+	margin:0px 0 1.2em 20px;
+}
+ol {
+	list-style-type:decimal;
+}
+ul {
+	list-style-type:disc;
+}
+ul ul {
+	list-style-type:circle;
+}
+ol ol, ul ul {
+	margin:0px 0 1.2em 40px;
+}
+li {
+	margin: 0 0 0.6em 20px;
+	line-height:1.2em;
+}
+/*** END LISTS ***/
+
+
+/*** START HEADERS ***/
+.CourseTitle {
+	font: bold 1.05em Verdana, Arial, Helvetica, sans-serif; color: #a9a9a9; float: right;
+
+}
+		
+.LessonTitle {
+	font: bold 1.05em Verdana, Arial, Helvetica, sans-serif; color: #666666; 
+
+}
+
+/*** END HEADERS ***/
+
+/*** START IMAGES ***/
+.caption{
+	font-size:smaller;
+	font-style:italic;
+}
+
+a img {border-style: none; cursor: pointer;}
+
+.aclImageRight {
+	clear:right;
+	margin-left:1.5em;
+	margin-bottom:1.2em;
+	float:right;
+	width:400px;
+}
+
+/*** END IMAGES ***/
+
+/*** START AUDIO PLAYER ***/
+.mejs-container {
+	float:right;
+	clear:right;
+	box-shadow:0px 0px 6px #262626;
+	-moz-box-shadow:0px 0px 6px #262626;
+	-webkit-box-shadow:0px 0px 6px #262626;
+	border:2px solid white;
+	background:#999999;
+	margin-bottom:0.8em;
+	margin-left:1.0em;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	background:#555555;
+}
+
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: #555555;
+}
+.mejs-controls .mejs-button button {
+	margin:5px 5px;
+	padding:2px 2px 2px 2px;
+}
+
+.mejs-controls .mejs-button button:focus {
+	outline: dotted 2px #e4f2f8;	
+}
+
+.mejs-controls .mejs-button button:hover {
+	outline: dotted 2px #56beec;	
+}
+/* shorten the volume slider to make room for the closed caption icon */
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+    width:25px;
+}
+
+/** closed caption image **/    
+button.elsevier-closed-caption {
+    position:relative;
+	float:right;
+    top:4px;
+    left:271px;
+    z-index:999;
+    min-width:16px;
+    min-height:16px;
+	cursor:pointer;
+	outline:none;
+	background:none;
+	border:none;
+}
+
+button.elsevier-closed-caption img{
+	border-width:2px;
+	border-style:solid;
+	border-color: transparent;
+	padding:2px 2px 2px 2px;
+	width:16px;
+	height:16px;
+}
+
+
+/*** END AUDIO PLAYER ***/
